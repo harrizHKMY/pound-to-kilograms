@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS File styles.css">
+    <script src="JavaScript File calculator.js" defer></script>
+    <title>Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Conversion Calculator</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Homepage index.html">Home</a></li>
+            <li><a href="Conversion Page conversion.html">Conversion</a></li>
+            <li><a href="Conversion calculator page.html">Conversion Calculator</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <form id="conversionForm">
+            <label for="inputValue">Enter Value:</label>
+            <input type="number" id="inputValue" required>
+            
+            <label for="conversionType">Select Conversion:</label>
+            <select id="conversionType">
+                <option value="kgToLb">Kilogram to Pound</option>
+                <option value="lbToKg">Pound to Kilogram</option>
+            </select>
+            
+            <button type="button" onClick="calculateConversion()">Calculate</button>
+        </form>
+
+        <div id="resultContainer"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Ahmad Harriz Hakimi]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
